@@ -3,6 +3,7 @@ const typeDefs = require('./schema');
 const { createStore } = require('./utils');
 const resolvers = require('./resolvers');
 const isEmail = require('isemail');
+require('dotenv').config();
 
 const LaunchAPI = require('./datasources/launch');
 const UserAPI = require('./datasources/user');
